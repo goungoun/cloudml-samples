@@ -13,6 +13,13 @@ Please checkout [ML on GCP](https://github.com/GoogleCloudPlatform/ml-on-gcp) gu
 * [TensorFlow Estimator Trainer Package Template](cloudml-template) -
   Simplifies creating a trainer package for Cloud ML Engine.
 * [Census](census) - Predict a person's income level
+  * 2018.08.25 퀵랩으로 실행. https://qwiklabs.com/focuses/581?parent=catalog
+~~~bash
+gcloud ml-engine local predict
+gcloud ml-engine local train
+gcloud ml-engine jobs submit training
+gcloud ml-engine jobs stream-logs
+~~~
   * [Keras Census](census/keras) - [Keras](https://keras.io/) single node model
   * [Canned Estimator](census/estimator) - [TensorFlow canned estimator](https://www.tensorflow.org/programmers_guide/estimators#pre-made_estimators) model
   * [Custom Estimator](census/customestimator) - [TensorFlow custom estimator](https://www.tensorflow.org/programmers_guide/estimators#custom_estimators) model
